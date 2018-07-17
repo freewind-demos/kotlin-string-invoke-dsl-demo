@@ -1,4 +1,10 @@
-Kotlin Hello World Demo
-=======================
+Kotlin String Invoke DSL Demo
+=============================
 
-Hello world from kotlin. Open it in IDE and run `Hello.kt`
+Use `operator` and `invoke`, to make use write code like:
+
+```
+"abc" {
+    println(this)
+}
+```

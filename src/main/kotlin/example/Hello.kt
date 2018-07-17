@@ -1,7 +1,11 @@
 package example
 
 fun main(args: Array<String>) {
-    println(hello("Kotlin"))
+    "abc" {
+        println(this)
+    }
 }
 
-fun hello(name: String): String = "Hello, $name!"
+operator fun String.invoke(fn: String.() -> Unit) {
+    fn(this)
+}
